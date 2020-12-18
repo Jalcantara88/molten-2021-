@@ -1,0 +1,47 @@
+.navbarLogo {
+  max-height: 100px; }
+
+.text-dokdo {
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 7em; }
+
+.text-libre {
+  font-family: 'Averia Libre', cursive;
+  font-size: 5em; }
+
+.text-turncoat {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 1.5em; }
+
+.bg-charcoal {
+  background-image: radial-gradient(#232425, #2e2626); }
+
+.bg-navbar {
+  background-image: url("/assets/images/SVG/navbar.svg");
+  background-color: transparent;
+  background-size: cover;
+  margin-bottom: -30px;
+  overflow-y: visible; }
+
+.navbarBelow {
+  background-image: url("/assets/images/SVG/navBarBelow.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  overflow: visible; }
+
+.bg-lava {
+  background-image: linear-gradient(to top, goldenrod, darkorange); }
+
+.text-orange {
+  color: darkorange; }
+
+.behind {
+  position: relative;
+  z-index: 1; }
+
+html body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
