@@ -23,11 +23,16 @@
 }
 
 .bg-navbar {
-    background-image: url("/assets/images/SVG/navbar.svg");
+    background-image: url("/assets/images/SVG/moltenNavbar.svg");
     background-color: transparent;
     background-size: cover;
-    margin-bottom: -30px;
-    overflow-y: visible;
+    background-position: center;
+
+
+}
+
+.logoHolder {
+    width: 100px;
 }
 
 .navbarBelow {
@@ -51,6 +56,15 @@
 .behind {
     position: relative;
     z-index: 1;
+    margin-top: -20px;
+}
+
+
+
+.headerFront {
+    
+    margin-top: -16%;
+   
 }
 
 html body {
