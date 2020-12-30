@@ -3,7 +3,9 @@
 
 .text-dokdo {
   font-family: 'East Sea Dokdo', cursive;
-  font-size: 7em; }
+  font-size: 5rem;
+  color: red;
+  opacity: .5; }
 
 .text-libre {
   font-family: 'Averia Libre', cursive;
@@ -40,11 +42,13 @@
 
 .behind {
   position: relative;
-  z-index: 1;
+
   margin-top: -20px; }
 
 .headerFront {
-  margin-top: -16%; }
+  position: relative;
+  z-index: 10;
+  margin-top: -60%; }
 
 html body {
   width: 100%;
