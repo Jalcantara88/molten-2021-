@@ -7,12 +7,13 @@
         <!-- build:css css/main.css -->
 
         <!--BOOTSTRAP-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+        >
         
-
+        <link href="/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         
         <!--BOOTSTRAP SOCIAL-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css"/>
+        <link rel="stylesheet" href="/node_modules/bootstrap-social/bootstrap-social.css"/>
 
         <!--CSS STYLESHEET-->
         <link rel="stylesheet" href="css/styles.css" />
@@ -27,7 +28,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 
@@ -40,6 +42,16 @@
 
     <body>
 
+<!--SPECIAL OFFER-->
+<div class="jumbotron-fluid">
+    <div class="row justify-contents-center text-center">
+        <div class="col text-center bg-charcoal text-orange font-crimson">
+            SPECIAL OFFER : FREE SHIPPING ON U.S. ORDERS OVER $20
+        </div>
+        
+    </div>
+</div>
+
 <!--NAVBAR MAIN-->
     <nav class="navbar navbar-expand-sm navbar-light sticky-top bg-navbar">
         <div class="container-fluid">
@@ -49,21 +61,16 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarMain">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item active align-self-center">
-                                <a class="nav-link py-1 px-3 mr-3 rounded" href="#shop">
-                                    <h3>Shop</h3>
+                        <ul class="navbar-nav align-self-center mx-auto">
+                            <li class="nav-item active align-self-center mx-auto">
+                                <a class="nav-link py-1 px-3 mx-3 rounded" href="index.html">
+                                    <h3 class="font-crimson">home</h3>
                                 </a>
                             </li>
 
-                            <li class="nav-item align-self-center">
-                                <a class="nav-link py-1 px-3 rounded" href="#photos">
-                                    <h3>Photos</h3>
-                                </a>
-                            </li>
 
                             <li class="nav-item">
-                                <div class="logoHolder mb-2">
+                                <div class="logoHolder mb-1 mx-auto">
                                     <a href="index.html">
                                         <img class="img-fluid navbarLogo " src="assets/images/SVG/logoDark.svg"/>
                                     </a>
@@ -71,17 +78,11 @@
                                 </div>
                             </li>
 
-                            <li class="nav-item align-self-center">
-                                <a class="nav-link py-1 px-3 mr-3 rounded" href="#about">
-                                    <h3>About</h3>
+                            <li class="nav-item align-self-center mx-auto">
+                                <a class="nav-link py-1 px-3 mx-3 rounded" href="store.html">
+                                    <h3 class="font-crimson">shop</h3>
                                 </a>
                             </li>
-                            <li class="nav-item align-self-center">
-                                <a class="nav-link py-1 px-3 rounded" href="#contact">
-                                    <h3>Contact</h3>
-                                </a>
-                            </li>
-
                             
                         </ul>
                     </div>
@@ -96,51 +97,34 @@
     
 
     <!--MAIN CAROUSEL-->
-    <div class="jumbotron jumbotron-fluid mb-0 behind py-0">
+    <div class="jumbotron jumbotron-fluid mainSlideshow mb-0 py-0">
         <div class="carousel carousel-fade" id="mainCarousel" data-pause="off"  data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="img-fluid" src="assets/images/sheDevil.png"/>
                     <div class="carousel-caption">
-                        <h1 class="text-dokdo carousel-header">SHE DEVIL</h1>
+                        <!--<h1 class="text-dokdo carousel-header">SHE DEVIL</h1>-->
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <img class="img-fluid" src="assets/images/arsonist.png"/>
+                    <div class="carousel-caption">
+                        <!--<h1 class="text-dokdo carousel-header">ARSONIST</h1>-->
                     </div>
                 </div>
 
                 
-                <div class="carousel-item">
-                    <img class="img-fluid" src="assets/images/phoenix2.png"/>
-                    <div class="carousel-caption">
-                        <h1 class="text-dokdo carousel-header">PHOENIX</h1>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img class="img-fluid" src="assets/images/hitman.png"/>
-                    <div class="carousel-caption">
-                        <h1 class="text-dokdo carousel-header">HITMAN</h1>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img class="img-fluid" src="assets/images/hellcat.png"/>
-                    <div class="carousel-caption">
-                        <h1 class="text-dokdo carousel-header">HELLCAT</h1>
-                    </div>
-                </div>
 
                 <div class="carousel-item">
                     <img class="img-fluid" src="assets/images/lucy.png"/>
                     <div class="carousel-caption">
-                        <h1 class="text-dokdo carousel-header">LUCY</h1>
+                        <!--<h1 class="text-dokdo carousel-header">LUCY</h1>-->
                     </div>
                 </div>
 
-                <div class="carousel-item">
-                    <img class="img-fluid" src="assets/images/dragon.png"/>
-                    <div class="carousel-caption">
-                        <h1 class="text-dokdo carousel-header">DRAGON</h1>
-                    </div>
-                </div>
+                
 
             </div>
 
@@ -155,43 +139,22 @@
         </div>
     </div>
 
-    <div class="jumbotron jumbotron-fluid mb-0 py-0" id="shop">
+    <!--MOLTEN LASHES BANNER-->
+    <div class="container-fluid videoHeader m-0 p-0" id="">
        
-            <video class="w-100 headerBehind" src="/assets/videos/moltenStoreHeader.mp4" type="video/mp4" autoplay="" muted="" loop=""></video>
-                <div class="col-4 mx-auto">
-                    <img class="img-fluid headerFront mx-auto" src="/assets/images/SVG/moltenTag.svg"/>
-                </div>
+            <video class="w-100 p-0 " src="/assets/videos/moltenStoreHeader.mp4" type="video/mp4" autoplay="" muted="" loop=""></video>
+            <div class="col-4  headerFront p-0 m-0 mx-auto">
+                <img class="h-100" src="/assets/images/SVG/moltenTag.svg"/>
+            </div>
         
     </div>
 
-    
-    <!--STOREFRONT-->
-    <div class="container-fluid">
-        <div class="row justify-contents-center bg-danger py-2">
-            
-            <div class="col-2 mx-auto">
-                <div class="ec-cart-widget"></div>
-                <div>
-                <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?37779145&data_platform=code&data_date=2020-12-16" charset="utf-8"></script>
-                <script type="text/javascript">Ecwid.init();</script>
-                </div>
-            </div>
-            <div class="col-4 align-self-center mx-auto">
-                <div id="my-search-37779145"></div>
-                <div>
-                <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?37779145&data_platform=code&data_date=2020-12-16" charset="utf-8"></script>
-                <script type="text/javascript"> xSearch("id=my-search-37779145"); </script>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!--TAG LINE-->
-    <div class="jumbotron jumbotron-fluid mb-0 py-3 bg-dark" id="shop">
+    <div class="jumbotron jumbotron-fluid mb-0 pb-0 pt-2 bg-charcoal tagline" id="shop">
         <div class="container container-fluid">
             <div class="row justify=content-center">
                 <div class="col-12 mx-auto">
-                    <h1 class="text-orange text-center text-turncoat align-self-center">GO FROM FEARLESS TO FEARED. BE HOT, BE MOLTEN.</h1>
+                    <h3 class="text-orange text-center font-crimson">GO FROM FEARLESS TO FEARED | BE HOT | BE MOLTEN.</h3>
                 </div>
                 
             </div>
@@ -199,42 +162,90 @@
     </div>
 
 
-    <div class="row py-5 bg-charcoal">
-        <div class="col-10 mx-auto rounded bg-white py-3">
-            <div id="my-store-37779145"></div>
-        </div>
-        <div>
-            <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?37779145&data_platform=code&data_date=2020-12-16" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-37779145");</script>
-        </div>
-    </div>
-    
 
 
-<div class="container-fluid py-5 bg-lava" id="about">
+<!--FEATURED LASHES-->
+<div class="jumbotron-fluid bg-dark my-0 py-5">
     <div class="row">
-        <div class="col-8 mx-auto text-center">
-            <div class="card">
-                <img class="card-img-top" src="/assets/images/profile pic.png"/>
-                <div class="card-body"> 
-                    <h2 clas="card-title">ABOUT MOLTEN</h2>
-                    <p class="card-text">
-                        Lashes have always been a reliable staple in my get ready routine, never failing to make me feel unreservedly beautiful. I sought to create a brand of lashes to also allow other women, men, and everyone in between see their undeniable beauty. Every package that I send out with Molten Lashes is crafted with care and endearment, hand written notes always included. A world filled with fierce, confident human beings is what I wish to see one day - I hope Molten creates a worthwhile impact that brings us just a little bit closer to that utopia. #SupportSmallBusiness
-                    </p>
-                    <a href="#" class="btn btn-primary">Send Message</a>
+        <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 mx-auto text-center"><h3 class="text-white mb-3 rounded bg-danger p-2 font-crimson">FEATURED LASHES</h3></div>
+    </div>
+    <div class="row justify-contents-center p-0 m-0">
+        <div class="col-12 col-lg-10 col-xl-8 mx-auto rounded bg-danger py-4">
+            <div class="row justify-contents-center">
+                <div class="col-12 col-md-4 col-lg-4 mx-auto">
+                    <div class="ecsp ecsp-SingleProduct-v2 ecsp-SingleProduct-v2-bordered ecsp-SingleProduct-v2-centered ecsp-Product ec-Product-241539216" itemscope itemtype="http://schema.org/Product" data-single-product-id="241539216"><div itemprop="image"></div><div class="ecsp-title" itemprop="name" content="Shedevil"></div><div itemtype="http://schema.org/Offer" itemscope itemprop="offers"><div class="ecsp-productBrowser-price ecsp-price" itemprop="price" content="4.99" data-spw-price-location="button"><div itemprop="priceCurrency" content="USD"></div></div></div><div customprop="options"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?37779145&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mx-auto">
+                    <div class="ecsp ecsp-SingleProduct-v2 ecsp-SingleProduct-v2-bordered ecsp-SingleProduct-v2-centered ecsp-Product ec-Product-241516901" itemscope itemtype="http://schema.org/Product" data-single-product-id="241516901"><div itemprop="image"></div><div class="ecsp-title" itemprop="name" content="Arsonist"></div><div itemtype="http://schema.org/Offer" itemscope itemprop="offers"><div class="ecsp-productBrowser-price ecsp-price" itemprop="price" content="4.99" data-spw-price-location="button"><div itemprop="priceCurrency" content="USD"></div></div></div><div customprop="options"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?37779145&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mx-auto">
+                    <div class="ecsp ecsp-SingleProduct-v2 ecsp-SingleProduct-v2-bordered ecsp-SingleProduct-v2-centered ecsp-Product ec-Product-241510984" itemscope itemtype="http://schema.org/Product" data-single-product-id="241510984"><div itemprop="image"></div><div class="ecsp-title" itemprop="name" content="Luci"></div><div itemtype="http://schema.org/Offer" itemscope itemprop="offers"><div class="ecsp-productBrowser-price ecsp-price" itemprop="price" content="4.99" data-spw-price-location="button"><div itemprop="priceCurrency" content="USD"></div></div></div><div customprop="options"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?37779145&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>
                 </div>
             </div>
-           
-            
         </div>
+        
+    
+    </div>
+</div> 
+
+    
+
+<!--ABOUT SECTION-->
+<div class="jumbotron paral paralsec py-5 my-0" id="about">
+    
+    <div class="row justify-contents-center">
+        <div class="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto mb-3">
+            <img class="img-fluid profile-pic" src="/assets/images/profile pic.png"/>
+        </div>
+        
+    </div>
+    <div class="row justify-contents-center">
+        <div class="col-12 col-md-10  col-lg-7 mx-auto">
+            <div class="row justify-contents-center">
+                <div class="col-8 col-sm-4 mx-auto">
+                    <a class="btn btn-social bg-warning w-100 justify-contents-center text-center" href="mailto:customersupport@moltenlashes.com" subject="subject text">
+                        <span class="pt-1"><i class="fa fa-envelope"></i></span><h4 class="font-crimson">SUPPORT</h4>
+                    </a>
+                </div>
+                <div class="col-8 col-sm-4 mx-auto">
+                    <a class="btn btn-social btn-foursquare w-100 justify-contents-center text-center" href="https://www.facebook.com/moltenlashes">
+                        <span class="pt-1"><i class="fa fa-instagram justify-contents-center"></i></span><h4 class="font-crimson">INSTAGRAM</h4>
+                    </a>
+                </div>
+                <div class="col-8 col-sm-4 mx-auto">
+                    <a class="btn btn-social btn-facebook w-100 justify-contents-center text-center" href="https://www.instagram.com/moltenlashes/">
+                        <span class="pt-1"><i class="fa fa-facebook justify-contents-center"></i></span><h4 class="font-crimson">FACEBOOK</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+    <div class="row">
+               
+        <div class="col-10 col-md-8 col-lg-6 bg-charcoal text-white rounded text-center justify mx-auto p-3 mt-3"> 
+            
+            <p class="text-justify font-crimson">
+                Lashes have always been a reliable staple in my get ready routine, never failing to make me feel unreservedly beautiful. I sought to create a brand of lashes to also allow other women, men, and everyone in between see their undeniable beauty. Every package that I send out with Molten Lashes is crafted with care and endearment, hand written notes always included. A world filled with fierce, confident human beings is what I wish to see one day - I hope Molten creates a worthwhile impact that brings us just a little bit closer to that utopia.
+            </p>
+            <p class="text-center text-warning"><strong> #SupportSmallBusiness</strong></p>
+
+        </div>   
+        
     </div>
 </div>
+
+
     
     
 
 
 
-    <footer class="bg-light text-center"> 
-        copyright &copy; 2012 - 2021 Molten Lashes
+    <footer class="bg-charcoal text-white text-center"> 
+        <p class="m-0 font-crimson"><small>&copy; 2021 Molten Lashes | design by <a href="https://www.deadheadstudio.com">Dead Head Studio</small></p></a>
     </footer>
 
      <!--build:js js/main.js-->

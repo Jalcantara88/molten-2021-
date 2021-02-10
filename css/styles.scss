@@ -32,7 +32,7 @@
 }
 
 .logoHolder {
-    width: 100px;
+    width: 60px;
 }
 
 .navbarBelow {
@@ -44,6 +44,20 @@
 
 }
 
+.paralsec {
+    background-image: url("/assets/images/profileBG.png");
+    }
+
+.paral {
+    min-height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    }
+
+.profile-pic {
+    border-radius: 100%;
+}
 
 .bg-lava {
     background-image: linear-gradient(to top, goldenrod, darkorange);
@@ -59,13 +73,31 @@
     margin-top: -20px;
 }
 
+.videoHeader {
+    position: relative;
+    
+}
 
+#videoStore {
+    margin-top: -2.5%;
+}
 
 .headerFront {
-    position: relative;
+    position: absolute;
     z-index: 10;
-    margin-top: -60%;
-   
+    top: 5%;
+    height: 90%;
+    left: 33%; 
+}
+
+#headerStore {
+    height: 80%;
+    left: 37%;
+    top: 6%
+}
+
+.supportBusiness {
+    margin-top: -2%;
 }
 
 html body {
@@ -73,4 +105,20 @@ html body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+}
+
+.mainSlideshow {
+    margin-top: -3%;
+}
+
+.tagline {
+    margin-top: -6px;
+}
+
+.font-crimson {
+    font-family: 'Crimson Pro', serif;
+}
+
+.bg-orangered {
+    background-color: orangered;
 }
