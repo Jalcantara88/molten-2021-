@@ -1,7 +1,8 @@
 .navbarLogo {
-    max-height: 100px;
+    
     
 }
+
 
 .text-dokdo {
     font-family: 'East Sea Dokdo', cursive;
@@ -122,3 +123,31 @@ html body {
 .bg-orangered {
     background-color: orangered;
 }
+
+.moltenTag {
+    height: 98%;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+
+
+  @media screen and (max-width: 600px) {
+    h3 {
+        font-size: 1em;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    h3 {
+        font-size: 1.5em;
+    }
+  }
+
+  @media screen and (min-width: 920px) {
+    h3 {
+        font-size: 2em;
+    }
+  }
